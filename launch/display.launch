@@ -1,9 +1,9 @@
 <launch>
 
-  <arg name="rvizconfig" default="$(find colab_reachy_objects)/rviz_config/cube.rviz" />
+  <arg name="rvizconfig" default="$(find colab_reachy_object_urdf)/rviz_config/cube.rviz" />
 
   <!-- <param name="robot_description" command="$(find xacro)/xacro $(arg model)" /> -->
-  <param name="robot_description" command="cat $(find colab_reachy_objects)/urdf/cube_and_apriltag.urdf" />
+  <param name="robot_description" command="cat $(find colab_reachy_object_urdf)/urdf/cube_and_apriltag.urdf" />
 <!-- 
   <node name="joint_state_publisher" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" >
     <param name="use_gui" value="TRUE"/>

@@ -14,7 +14,7 @@
     <color rgba="0 0 0 1"/>
   </material>
 
-  <link name="base_link">
+  <link name="cube_base_link">
     <visual>
       <origin rpy= "0 0 0 " xyz="0 0 0" />
       <geometry>
@@ -34,9 +34,9 @@
     </visual>
   </link>
 
-  <joint name="base_link__apriltag" type="fixed">
+  <joint name="cube_base_link__apriltag" type="fixed">
     <parent link="april_tag6" />
-    <child link="base_link"/>
+    <child link="cube_base_link"/>
     <origin xyz="0 0 -0.0251" rpy="0 0 0"/>
   </joint>
 </robot>
