@@ -24,7 +24,7 @@
     </visual>
   </link>
 
-  <link name="apriltag_8">
+  <link name="apriltag_5">
     <visual>
       <origin rpy= "0 0 0 " xyz="0 0 0" />
       <geometry>
@@ -35,7 +35,7 @@
   </link>
 
   <joint name="cube_base_link__apriltag" type="fixed">
-    <parent link="apriltag_8" />
+    <parent link="apriltag_5" />
     <child link="cube_base_link"/>
     <origin xyz="0 0 -0.0251" rpy="0 0 0"/>
   </joint>
